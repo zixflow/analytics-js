@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Analytics Next Vanilla Example</title>
+</head>
+
+<body>
+  <button id="track-btn">Track</button>
+  <button id="page-btn">Page</button>
+  <button id="identify-btn">Identify</button>
+  <button id="alias-btn">Alias</button>
+  <button id="group-btn">Group</button>
+  <script type="module">
+    // For local development, import from the built dist folder
+    // import { AnalyticsBrowser } from '/dist/index.js';
+    // After publishing, switch to CDN import:
+    import { AnalyticsBrowser } from 'https://cdn.jsdelivr.net/npm/@zixflow/analytics-next/+esm';
+    const analytics = AnalyticsBrowser.load({ writeKey: 'your-zixflow-sdk-key' });
+    document.getElementById('track-btn').onclick = () => analytics.track('Test Event', { foo: 'bar' });
+    document.getElementById('page-btn').onclick = () => analytics.page('Test Page', { pageType: 'example' });
+    document.getElementById('identify-btn').onclick = () => analytics.identify('user_123', { name: 'John Doe', email: 'john@example.com' });
+    document.getElementById('alias-btn').onclick = () => analytics.alias('user_123', 'user_456');
+    document.getElementById('group-btn').onclick = () => analytics.group('group_789', { groupName: 'Test Group' });
+  </script>
+  <p style="color: orange; font-size: 0.9em;">Note: For local development, the SDK is imported from the dist folder. After publishing, switch to the CDN import.</p>
+</body>
+
+</html>

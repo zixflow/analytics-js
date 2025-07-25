@@ -1,0 +1,28 @@
+{
+  "name": "@zixflow/analytics-next",
+  "version": "1.0.0",
+  "description": "A wrapper for @segment/analytics-next with enhanced config and browser framework support.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": ["dist"],
+  "scripts": {
+    "build": "tsc",
+    "lint": "eslint src --ext .ts,.tsx",
+    "test": "echo \"No tests yet\""
+  },
+  "type": "module",
+  "peerDependencies": {
+    "@segment/analytics-next": "^1.0.0"
+  },
+  "devDependencies": {
+    "@segment/analytics-next": "^1.0.0",
+    "typescript": "^5.0.0",
+    "eslint": "^8.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zixflow/analytics-next.git"
+  },
+  "author": "zixflow",
+  "license": "MIT"
+} 
