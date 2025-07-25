@@ -306,7 +306,7 @@ export default {
     <button id="pageBtn">Track Page</button>
 
     <script type="module">
-        import { AnalyticsBrowser } from 'https://cdn.jsdelivr.net/npm/@zixflow/analytics-next/+esm';
+        import { AnalyticsBrowser } from 'https://cdn.jsdelivr.net/npm/@zixflow/analytics-next@1.0.3/dist/index.bundle.js';
         
         const analytics = AnalyticsBrowser.load({ writeKey: 'your-zixflow-sdk-key' });
         
