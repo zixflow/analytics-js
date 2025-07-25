@@ -9,6 +9,7 @@ echo "🚀 Starting package publishing process..."
 # Check if we're on master branch
 if [[ $(git branch --show-current) != "master" ]]; then
     echo "❌ Error: Must be on master branch to publish"
+    echo "Current branch: $(git branch --show-current)"
     exit 1
 fi
 
