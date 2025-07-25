@@ -4,7 +4,7 @@ A powerful wrapper for analytics-next with enhanced configuration and seamless b
 
 ## Features
 
-- 🚀 **Easy Integration**: Simple setup for React, Next.js, Vue, and Vanilla JavaScript applications
+- 🚀 **Easy Integration**: Simple setup for React, Vue, and Vanilla JavaScript applications
 - 📊 **Comprehensive Tracking**: Track events, page views, user identification, and group analytics
 - ⚙️ **Enhanced Configuration**: Pre-configured settings optimized for performance and reliability
 - 🌐 **Framework Agnostic**: Works seamlessly across different JavaScript frameworks
@@ -26,7 +26,7 @@ yarn add @zixflow/analytics-next
 ### CDN (for Vanilla JavaScript)
 ```html
 <script type="module">
-  import { AnalyticsBrowser } from 'https://cdn.jsdelivr.net/npm/@zixflow/analytics-next/+esm';
+  import { AnalyticsBrowser } from 'https://cdn.jsdelivr.net/npm/@zixflow/analytics-next@1.0.3/dist/index.bundle.js';
 </script>
 ```
 
@@ -134,67 +134,6 @@ function UserProfile({ user }) {
       <h1>Welcome, {user.name}!</h1>
       <button onClick={handleProfileUpdate}>Update Profile</button>
     </div>
-  );
-}
-```
-
-### Next.js
-
-#### Pages Router
-```javascript
-// pages/index.js
-import { AnalyticsBrowser } from '@zixflow/analytics-next';
-
-const analytics = AnalyticsBrowser.load({ writeKey: 'your-zixflow-sdk-key' });
-
-export default function Home() {
-  const handlePageView = () => {
-    analytics.page('Homepage', {
-      pageType: 'landing',
-      referrer: document.referrer
-    });
-  };
-
-  const handleEvent = () => {
-    analytics.track('Custom Event', {
-      category: 'engagement',
-      action: 'button_click'
-    });
-  };
-
-  return (
-    <div>
-      <h1>Welcome to Our App</h1>
-      <button onClick={handlePageView}>Track Page View</button>
-      <button onClick={handleEvent}>Track Event</button>
-    </div>
-  );
-}
-```
-
-#### App Router (Next.js 13+)
-```javascript
-// app/layout.js
-'use client';
-
-import { useEffect } from 'react';
-import { AnalyticsBrowser } from '@zixflow/analytics-next';
-
-const analytics = AnalyticsBrowser.load({ writeKey: 'your-zixflow-sdk-key' });
-
-export default function RootLayout({ children }) {
-  useEffect(() => {
-    // Track initial page view
-    analytics.page('App Loaded', {
-      pageType: 'application',
-      timestamp: new Date().toISOString()
-    });
-  }, []);
-
-  return (
-    <html>
-      <body>{children}</body>
-    </html>
   );
 }
 ```
@@ -378,7 +317,6 @@ Initialize the analytics browser with configuration settings.
 #### Parameters
 - `settings` (object): Configuration object
   - `writeKey` (string, required): Your analytics write key
-  - `apiHost` (string, optional): Custom API host (defaults to 'events.zixflow.com/events/v1')
 
 #### Returns
 - Analytics instance with tracking methods

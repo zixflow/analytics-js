@@ -1,3 +1,5 @@
+"use client";
+
 import { AnalyticsBrowser } from '@zixflow/analytics-next';
 
 const analytics = AnalyticsBrowser.load({ writeKey: 'your-zixflow-sdk-key' });
