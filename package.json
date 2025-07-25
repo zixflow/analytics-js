@@ -1,28 +1,72 @@
 {
   "name": "@zixflow/analytics-next",
   "version": "1.0.0",
-  "description": "A wrapper for @segment/analytics-next with enhanced config and browser framework support.",
+  "description": "A powerful wrapper for analytics-next with enhanced configuration and seamless browser framework support.",
   "main": "dist/index.js",
+  "module": "dist/index.js",
   "types": "dist/index.d.ts",
-  "files": ["dist"],
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
   "scripts": {
     "build": "tsc",
+    "build:clean": "rm -rf dist && npm run build",
+    "prepublishOnly": "npm run build:clean",
     "lint": "eslint src --ext .ts,.tsx",
-    "test": "echo \"No tests yet\""
+    "lint:fix": "eslint src --ext .ts,.tsx --fix",
+    "test": "echo \"No tests yet\"",
+    "test:build": "npm run build && node -e \"console.log('Build successful')\"",
+    "clean": "rm -rf dist node_modules package-lock.json",
+    "prepack": "npm run build:clean",
+    "publish:package": "./scripts/publish.sh"
   },
+  "keywords": [
+    "analytics",
+    "tracking",
+    "events",
+    "user-tracking",
+    "web-analytics",
+    "react",
+    "vue",
+    "nextjs",
+    "typescript",
+    "browser",
+    "sdk"
+  ],
   "type": "module",
   "peerDependencies": {
     "@segment/analytics-next": "^1.0.0"
   },
   "devDependencies": {
     "@segment/analytics-next": "^1.0.0",
+    "@types/node": "^20.0.0",
     "typescript": "^5.0.0",
     "eslint": "^8.0.0"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/zixflow/analytics-next.git"
+    "url": "https://github.com/zixflow/analytics-next.git",
+    "directory": "."
   },
+  "bugs": {
+    "url": "https://github.com/zixflow/analytics-next/issues"
+  },
+  "homepage": "https://github.com/zixflow/analytics-next#readme",
   "author": "zixflow",
-  "license": "MIT"
+  "license": "MIT",
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
 } 

@@ -1,14 +1,22 @@
 {
   "compilerOptions": {
     "target": "ES2019",
-    "module": "nodenext",
+    "module": "ESNext",
+    "moduleResolution": "node",
     "declaration": true,
+    "declarationMap": true,
     "outDir": "dist",
+    "rootDir": "src",
     "strict": true,
     "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
-    "moduleResolution": "nodenext"
+    "removeComments": false,
+    "sourceMap": true,
+    "lib": ["ES2019", "DOM"],
+    "types": ["node"]
   },
-  "include": ["src/**/*"]
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "dist", "examples", "**/*.test.ts", "**/*.spec.ts"]
 } 
