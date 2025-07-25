@@ -20,13 +20,15 @@
   "scripts": {
     "build": "tsc",
     "build:clean": "rm -rf dist && npm run build",
-    "prepublishOnly": "npm run build:clean",
+    "build:bundle": "esbuild src/index.ts --bundle --format=esm --outfile=dist/index.bundle.js --minify",
+    "build:all": "npm run build:clean && npm run build:bundle",
+    "prepublishOnly": "npm run build:all",
     "lint": "eslint src --ext .ts,.tsx",
     "lint:fix": "eslint src --ext .ts,.tsx --fix",
     "test": "echo \"No tests yet\"",
     "test:build": "npm run build && node -e \"console.log('Build successful')\"",
     "clean": "rm -rf dist node_modules package-lock.json",
-    "prepack": "npm run build:clean",
+    "prepack": "npm run build:all",
     "publish:package": "./scripts/publish.sh"
   },
   "keywords": [
@@ -51,6 +53,7 @@
     "@types/node": "^20.0.0",
     "@typescript-eslint/eslint-plugin": "^8.38.0",
     "@typescript-eslint/parser": "^8.38.0",
+    "esbuild": "^0.19.0",
     "eslint": "^8.0.0",
     "typescript": "^5.0.0"
   },

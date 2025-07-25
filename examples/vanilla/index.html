@@ -14,9 +14,9 @@
   <button id="group-btn">Group</button>
   <script type="module">
     // For local development, import from the built dist folder
-    // import { AnalyticsBrowser } from '/dist/index.js';
+    // import { AnalyticsBrowser } from '/dist/index.bundle.js';
     // After publishing, switch to CDN import:
-    import { AnalyticsBrowser } from 'https://cdn.jsdelivr.net/npm/@zixflow/analytics-next/+esm';
+    import { AnalyticsBrowser } from 'https://cdn.jsdelivr.net/npm/@zixflow/analytics-next@1.0.2/dist/index.bundle.js';
     const analytics = AnalyticsBrowser.load({ writeKey: 'your-zixflow-sdk-key' });
     document.getElementById('track-btn').onclick = () => analytics.track('Test Event', { foo: 'bar' });
     document.getElementById('page-btn').onclick = () => analytics.page('Test Page', { pageType: 'example' });
@@ -24,7 +24,7 @@
     document.getElementById('alias-btn').onclick = () => analytics.alias('user_123', 'user_456');
     document.getElementById('group-btn').onclick = () => analytics.group('group_789', { groupName: 'Test Group' });
   </script>
-  <p style="color: orange; font-size: 0.9em;">Note: For local development, the SDK is imported from the dist folder. After publishing, switch to the CDN import.</p>
+  <p style="color: orange; font-size: 0.9em;">Note: For local development, the SDK is imported from the dist folder. After publishing, switch to the CDN import. This example uses the bundled version which includes all dependencies.</p>
 </body>
 
 </html>
