@@ -19,7 +19,7 @@ export const AnalyticsBrowser = {
               version: '4.4.7',
               componentTypes: ['browser']
             },
-            apiHost: settings.apiHost || 'events.zixflow.com/events/v1'
+            apiHost: settings.apiHost || 'events.zixflow.com/sdk/v1'
           }
         },
         plan: {
@@ -31,7 +31,7 @@ export const AnalyticsBrowser = {
         analyticsNextEnabled: true,
         middlewareSettings: { routingRules: [] },
         enabledMiddleware: {},
-        metrics: { sampleRate: 0.1, host: 'events.zixflow.com/events/v1' },
+        metrics: { sampleRate: 0.1, host: 'events.zixflow.com/sdk/v1' },
         legacyVideoPluginsEnabled: false,
         remotePlugins: [],
         autoInstrumentationSettings: { disableTraffic: false, sampleRate: 0 }
