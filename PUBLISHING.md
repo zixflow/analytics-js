@@ -10,23 +10,7 @@ This guide explains how to publish the `@zixflow/analytics-next` package to npm.
 
 ## Publishing Methods
 
-### Method 1: Automated Publishing (Recommended)
-
-The package is set up with automated publishing via GitHub Actions. To publish:
-
-1. **Create a new tag**:
-   ```bash
-   git tag v1.0.1
-   git push origin v1.0.1
-   ```
-
-2. **GitHub Actions will automatically**:
-   - Run tests and linting
-   - Build the package
-   - Publish to npm
-   - Create a GitHub release
-
-### Method 2: Manual Publishing
+### Method 1: Manual Publishing
 
 If you prefer to publish manually:
 
