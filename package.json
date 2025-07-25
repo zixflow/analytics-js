@@ -1,6 +1,6 @@
 {
   "name": "@zixflow/analytics-next",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A powerful wrapper for analytics-next with enhanced configuration and seamless browser framework support.",
   "main": "dist/index.js",
   "module": "dist/index.js",
