@@ -1,6 +1,6 @@
-# @zixflow/analytics-next
+# @zixflow/analytics-js
 
-A powerful wrapper for analytics-next with enhanced configuration and seamless browser framework support. This package provides a simplified interface for tracking user events, page views, user identification, and group analytics across your web applications.
+Zixflow Analytics SDK is built for modern web applications, offering a lightweight and reliable way to track user events, page views, identities, and group behavior. Designed to work seamlessly across frameworks like React, Vue, and plain JavaScript, it comes pre-configured for performance and easy integration—so you can focus on insights, not setup.
 
 ## Features
 
@@ -15,18 +15,18 @@ A powerful wrapper for analytics-next with enhanced configuration and seamless b
 
 ### NPM
 ```bash
-npm install @zixflow/analytics-next
+npm install @zixflow/analytics-js
 ```
 
 ### Yarn
 ```bash
-yarn add @zixflow/analytics-next
+yarn add @zixflow/analytics-js
 ```
 
 ### CDN (for Vanilla JavaScript)
 ```html
 <script type="module">
-  import { AnalyticsBrowser } from 'https://cdn.jsdelivr.net/npm/@zixflow/analytics-next@1.0.3/dist/index.bundle.js';
+  import { AnalyticsBrowser } from 'https://cdn.jsdelivr.net/npm/@zixflow/analytics-js@1.0.3/dist/index.bundle.js';
 </script>
 ```
 
@@ -37,7 +37,7 @@ yarn add @zixflow/analytics-next
 First, import and initialize the analytics browser with your write key:
 
 ```javascript
-import { AnalyticsBrowser } from '@zixflow/analytics-next';
+import { AnalyticsBrowser } from '@zixflow/analytics-js';
 
 const analytics = AnalyticsBrowser.load({ 
   writeKey: 'your-zixflow-sdk-key' 
@@ -76,7 +76,7 @@ analytics.identify('user_123', {
 #### Basic Setup
 ```jsx
 import React from 'react';
-import { AnalyticsBrowser } from '@zixflow/analytics-next';
+import { AnalyticsBrowser } from '@zixflow/analytics-js';
 
 const analytics = AnalyticsBrowser.load({ writeKey: 'your-zixflow-sdk-key' });
 
@@ -108,7 +108,7 @@ function App() {
 #### React Hook Example
 ```jsx
 import React, { useEffect } from 'react';
-import { AnalyticsBrowser } from '@zixflow/analytics-next';
+import { AnalyticsBrowser } from '@zixflow/analytics-js';
 
 const analytics = AnalyticsBrowser.load({ writeKey: 'your-zixflow-sdk-key' });
 
@@ -153,7 +153,7 @@ function UserProfile({ user }) {
 
 <script setup>
 import { onMounted } from 'vue';
-import { AnalyticsBrowser } from '@zixflow/analytics-next';
+import { AnalyticsBrowser } from '@zixflow/analytics-js';
 
 const analytics = AnalyticsBrowser.load({ writeKey: 'your-zixflow-sdk-key' });
 
@@ -198,7 +198,7 @@ onMounted(() => {
 </template>
 
 <script>
-import { AnalyticsBrowser } from '@zixflow/analytics-next';
+import { AnalyticsBrowser } from '@zixflow/analytics-js';
 
 export default {
   name: 'AnalyticsDemo',
@@ -245,7 +245,7 @@ export default {
     <button id="pageBtn">Track Page</button>
 
     <script type="module">
-        import { AnalyticsBrowser } from 'https://cdn.jsdelivr.net/npm/@zixflow/analytics-next@1.0.3/dist/index.bundle.js';
+        import { AnalyticsBrowser } from 'https://cdn.jsdelivr.net/npm/@zixflow/analytics-js@1.0.3/dist/index.bundle.js';
         
         const analytics = AnalyticsBrowser.load({ writeKey: 'your-zixflow-sdk-key' });
         
@@ -284,7 +284,7 @@ export default {
 #### ES6 Module Setup
 ```javascript
 // main.js
-import { AnalyticsBrowser } from '@zixflow/analytics-next';
+import { AnalyticsBrowser } from '@zixflow/analytics-js';
 
 const analytics = AnalyticsBrowser.load({ writeKey: 'your-zixflow-sdk-key' });
 
@@ -475,7 +475,7 @@ This package supports all modern browsers:
 Full TypeScript definitions are included. The package exports types for better development experience:
 
 ```typescript
-import { AnalyticsBrowser, AnalyticsBrowserSettings } from '@zixflow/analytics-next';
+import { AnalyticsBrowser, AnalyticsBrowserSettings } from '@zixflow/analytics-js';
 
 const settings: AnalyticsBrowserSettings = {
   writeKey: 'your-zixflow-sdk-key'

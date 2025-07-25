@@ -16,7 +16,7 @@
     // For local development, import from the built dist folder
     // import { AnalyticsBrowser } from '/dist/index.bundle.js';
     // After publishing, switch to CDN import:
-    import { AnalyticsBrowser } from 'https://cdn.jsdelivr.net/npm/@zixflow/analytics-next@1.0.2/dist/index.bundle.js';
+    import { AnalyticsBrowser } from 'https://cdn.jsdelivr.net/npm/@zixflow/analytics-js@1.0.2/dist/index.bundle.js';
     const analytics = AnalyticsBrowser.load({ writeKey: 'your-zixflow-sdk-key' });
     document.getElementById('track-btn').onclick = () => analytics.track('Test Event', { foo: 'bar' });
     document.getElementById('page-btn').onclick = () => analytics.page('Test Page', { pageType: 'example' });

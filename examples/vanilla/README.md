@@ -1,6 +1,6 @@
 # Vanilla JS Example
 
-This example demonstrates how to use @zixflow/analytics-next in a plain HTML/JS app.
+This example demonstrates how to use @zixflow/analytics-js in a plain HTML/JS app.
 
 ## Usage
 

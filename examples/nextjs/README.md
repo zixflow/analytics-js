@@ -1,6 +1,6 @@
 # Next.js Example
 
-This example demonstrates how to use @zixflow/analytics-next in a Next.js app.
+This example demonstrates how to use @zixflow/analytics-js in a Next.js app.
 
 ## Usage
 

@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Publishing script for @zixflow/analytics-next
+# Publishing script for @zixflow/analytics-js
 
 set -e
 
@@ -99,5 +99,5 @@ git tag "v$NEW_VERSION"
 git push origin master
 git push origin "v$NEW_VERSION"
 
-echo "✅ Successfully published @zixflow/analytics-next@$NEW_VERSION"
+echo "✅ Successfully published @zixflow/analytics-js@$NEW_VERSION"
 echo "🎉 Package is now available on npm!" 

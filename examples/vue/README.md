@@ -1,6 +1,6 @@
 # Vue Example
 
-This example demonstrates how to use @zixflow/analytics-next in a Vue 3 app.
+This example demonstrates how to use @zixflow/analytics-js in a Vue 3 app.
 
 ## Usage
 

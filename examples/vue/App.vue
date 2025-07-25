@@ -9,7 +9,7 @@
 </template>
 
 <script setup>
-import { AnalyticsBrowser } from '@zixflow/analytics-next';
+import { AnalyticsBrowser } from '@zixflow/analytics-js';
 const analytics = AnalyticsBrowser.load({ writeKey: 'your-zixflow-sdk-key' });
 function track() {
   analytics.track('Test Event', { foo: 'bar' });

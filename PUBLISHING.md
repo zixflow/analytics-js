@@ -1,6 +1,6 @@
 # Publishing Guide
 
-This guide explains how to publish the `@zixflow/analytics-next` package to npm.
+This guide explains how to publish the `@zixflow/analytics-js` package to npm.
 
 ## Prerequisites
 
@@ -130,7 +130,7 @@ Set up these secrets in your GitHub repository:
 If you need to unpublish a version:
 
 ```bash
-npm unpublish @zixflow/analytics-next@1.0.1
+npm unpublish @zixflow/analytics-js@1.0.1
 ```
 
 **Note**: npm only allows unpublishing within 72 hours of publishing.
@@ -151,12 +151,12 @@ After successful publishing:
 
 1. **Verify the package**:
    ```bash
-   npm view @zixflow/analytics-next
+   npm view @zixflow/analytics-js
    ```
 
 2. **Test installation**:
    ```bash
-   npm install @zixflow/analytics-next
+   npm install @zixflow/analytics-js
    ```
 
 3. **Update documentation** if needed

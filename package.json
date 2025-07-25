@@ -1,7 +1,7 @@
 {
-  "name": "@zixflow/analytics-next",
+  "name": "@zixflow/analytics-js",
   "version": "1.0.3",
-  "description": "A powerful wrapper for analytics-next with enhanced configuration and seamless browser framework support.",
+  "description": "Zixflow Analytics SDK is built for modern web applications, offering a lightweight and reliable way to track user events, page views, identities, and group behavior. Designed to work seamlessly across frameworks like React, Vue, and plain JavaScript, it comes pre-configured for performance and easy integration—so you can focus on insights, not setup.",
   "main": "dist/index.js",
   "module": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -59,13 +59,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/zixflow/analytics-next.git",
+    "url": "https://github.com/zixflow/analytics-js.git",
     "directory": "."
   },
   "bugs": {
-    "url": "https://github.com/zixflow/analytics-next/issues"
+    "url": "https://github.com/zixflow/analytics-js/issues"
   },
-  "homepage": "https://github.com/zixflow/analytics-next#readme",
+  "homepage": "https://github.com/zixflow/analytics-js#readme",
   "author": "zixflow",
   "license": "MIT",
   "engines": {

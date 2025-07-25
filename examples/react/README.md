@@ -1,6 +1,6 @@
 # React Example
 
-This example demonstrates how to use @zixflow/analytics-next in a React app.
+This example demonstrates how to use @zixflow/analytics-js in a React app.
 
 ## Usage
 

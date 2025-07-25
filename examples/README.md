@@ -1,4 +1,4 @@
-# Examples for @zixflow/analytics-next
+# Examples for @zixflow/analytics-js
 
 This directory contains example projects demonstrating how to use the analytics wrapper in different browser-side JavaScript frameworks:
 
