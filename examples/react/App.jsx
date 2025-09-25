@@ -1,7 +1,7 @@
 import React from 'react';
 import { AnalyticsBrowser } from '@zixflow/analytics-js';
 
-const analytics = AnalyticsBrowser.load({ writeKey: 'your-zixflow-sdk-key' });
+const analytics = AnalyticsBrowser.load({ writeKey: 'LS899c0oTdHjXnLaEosKOeFkKdUQXBNo', apiHost: 'localhost:8080/api/sdk' });
 
 export default function App() {
   return (
