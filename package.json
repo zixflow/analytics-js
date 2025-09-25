@@ -1,6 +1,6 @@
 {
   "name": "@zixflow/analytics-js",
-  "version": "1.0.5",
+  "version": "1.0.7",
   "description": "Zixflow Analytics SDK is built for modern web applications, offering a lightweight and reliable way to track user events, page views, identities, and group behavior. Designed to work seamlessly across frameworks like React, Vue, and plain JavaScript, it comes pre-configured for performance and easy integration—so you can focus on insights, not setup.",
   "main": "dist/index.js",
   "module": "dist/index.js",
